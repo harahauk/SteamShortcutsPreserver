@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		334CB00A1398442900132728 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334CB0091398442900132728 /* Cocoa.framework */; };
+		334CB0141398442900132728 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 334CB0121398442900132728 /* InfoPlist.strings */; };
+		334CB0171398442900132728 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 334CB0161398442900132728 /* main.m */; };
+		334CB01A1398442900132728 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 334CB0181398442900132728 /* Credits.rtf */; };
+		334CB01D1398442900132728 /* SteamShortcutsPreserverAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 334CB01C1398442900132728 /* SteamShortcutsPreserverAppDelegate.m */; };
+		334CB0201398442900132728 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 334CB01E1398442900132728 /* MainMenu.xib */; };
+		33E9BF0C1398636800F99CB0 /* applet.icns in Resources */ = {isa = PBXBuildFile; fileRef = 33E9BF0B1398636800F99CB0 /* applet.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		334CB0051398442900132728 /* SteamShortcutsPreserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamShortcutsPreserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		334CB0091398442900132728 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		334CB00C1398442900132728 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		334CB00D1398442900132728 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		334CB00E1398442900132728 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		334CB0111398442900132728 /* SteamShortcutsPreserver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SteamShortcutsPreserver-Info.plist"; sourceTree = "<group>"; };
+		334CB0131398442900132728 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		334CB0151398442900132728 /* SteamShortcutsPreserver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SteamShortcutsPreserver-Prefix.pch"; sourceTree = "<group>"; };
+		334CB0161398442900132728 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		334CB0191398442900132728 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		334CB01B1398442900132728 /* SteamShortcutsPreserverAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SteamShortcutsPreserverAppDelegate.h; sourceTree = "<group>"; };
+		334CB01C1398442900132728 /* SteamShortcutsPreserverAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SteamShortcutsPreserverAppDelegate.m; sourceTree = "<group>"; };
+		334CB01F1398442900132728 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		33E9BF0B1398636800F99CB0 /* applet.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = applet.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		334CB0021398442900132728 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				334CB00A1398442900132728 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		334CAFFA1398442900132728 = {
+			isa = PBXGroup;
+			children = (
+				33E9BF0B1398636800F99CB0 /* applet.icns */,
+				334CB00F1398442900132728 /* SteamShortcutsPreserver */,
+				334CB0081398442900132728 /* Frameworks */,
+				334CB0061398442900132728 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		334CB0061398442900132728 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				334CB0051398442900132728 /* SteamShortcutsPreserver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		334CB0081398442900132728 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				334CB0091398442900132728 /* Cocoa.framework */,
+				334CB00B1398442900132728 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		334CB00B1398442900132728 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				334CB00C1398442900132728 /* AppKit.framework */,
+				334CB00D1398442900132728 /* CoreData.framework */,
+				334CB00E1398442900132728 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		334CB00F1398442900132728 /* SteamShortcutsPreserver */ = {
+			isa = PBXGroup;
+			children = (
+				334CB01B1398442900132728 /* SteamShortcutsPreserverAppDelegate.h */,
+				334CB01C1398442900132728 /* SteamShortcutsPreserverAppDelegate.m */,
+				334CB01E1398442900132728 /* MainMenu.xib */,
+				334CB0101398442900132728 /* Supporting Files */,
+			);
+			path = SteamShortcutsPreserver;
+			sourceTree = "<group>";
+		};
+		334CB0101398442900132728 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				334CB0111398442900132728 /* SteamShortcutsPreserver-Info.plist */,
+				334CB0121398442900132728 /* InfoPlist.strings */,
+				334CB0151398442900132728 /* SteamShortcutsPreserver-Prefix.pch */,
+				334CB0161398442900132728 /* main.m */,
+				334CB0181398442900132728 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		334CB0041398442900132728 /* SteamShortcutsPreserver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 334CB0231398442900132728 /* Build configuration list for PBXNativeTarget "SteamShortcutsPreserver" */;
+			buildPhases = (
+				334CB0011398442900132728 /* Sources */,
+				334CB0021398442900132728 /* Frameworks */,
+				334CB0031398442900132728 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SteamShortcutsPreserver;
+			productName = SteamShortcutsPreserver;
+			productReference = 334CB0051398442900132728 /* SteamShortcutsPreserver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		334CAFFC1398442900132728 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = NTNU;
+			};
+			buildConfigurationList = 334CAFFF1398442900132728 /* Build configuration list for PBXProject "SteamShortcutsPreserver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 334CAFFA1398442900132728;
+			productRefGroup = 334CB0061398442900132728 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				334CB0041398442900132728 /* SteamShortcutsPreserver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		334CB0031398442900132728 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				334CB0141398442900132728 /* InfoPlist.strings in Resources */,
+				334CB01A1398442900132728 /* Credits.rtf in Resources */,
+				334CB0201398442900132728 /* MainMenu.xib in Resources */,
+				33E9BF0C1398636800F99CB0 /* applet.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		334CB0011398442900132728 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				334CB0171398442900132728 /* main.m in Sources */,
+				334CB01D1398442900132728 /* SteamShortcutsPreserverAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		334CB0121398442900132728 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				334CB0131398442900132728 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		334CB0181398442900132728 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				334CB0191398442900132728 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		334CB01E1398442900132728 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				334CB01F1398442900132728 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		334CB0211398442900132728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		334CB0221398442900132728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		334CB0241398442900132728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SteamShortcutsPreserver/SteamShortcutsPreserver-Prefix.pch";
+				INFOPLIST_FILE = "SteamShortcutsPreserver/SteamShortcutsPreserver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		334CB0251398442900132728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SteamShortcutsPreserver/SteamShortcutsPreserver-Prefix.pch";
+				INFOPLIST_FILE = "SteamShortcutsPreserver/SteamShortcutsPreserver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		334CAFFF1398442900132728 /* Build configuration list for PBXProject "SteamShortcutsPreserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				334CB0211398442900132728 /* Debug */,
+				334CB0221398442900132728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		334CB0231398442900132728 /* Build configuration list for PBXNativeTarget "SteamShortcutsPreserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				334CB0241398442900132728 /* Debug */,
+				334CB0251398442900132728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 334CAFFC1398442900132728 /* Project object */;
+}
