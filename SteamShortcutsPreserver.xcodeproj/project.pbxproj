@@ -16,7 +16,6 @@
 		3359BFFB139953C100ED8145 /* steam.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3359BFFA139953C000ED8145 /* steam.icns */; };
 		33B702B6139925EE0052B594 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 33B702B3139925EE0052B594 /* README.md */; };
 		33B702B7139925EE0052B594 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B702B4139925EE0052B594 /* LaunchAtLoginController.m */; };
-		33E9BF0C1398636800F99CB0 /* applet.icns in Resources */ = {isa = PBXBuildFile; fileRef = 33E9BF0B1398636800F99CB0 /* applet.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +36,6 @@
 		33B702B3139925EE0052B594 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		33B702B4139925EE0052B594 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
 		33B702B5139925EE0052B594 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
-		33E9BF0B1398636800F99CB0 /* applet.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = applet.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				3359BFFA139953C000ED8145 /* steam.icns */,
-				33E9BF0B1398636800F99CB0 /* applet.icns */,
 				334CB00F1398442900132728 /* SteamShortcutsPreserver */,
 				334CB0081398442900132728 /* Frameworks */,
 				334CB0061398442900132728 /* Products */,
@@ -169,7 +166,6 @@
 				334CB0141398442900132728 /* InfoPlist.strings in Resources */,
 				334CB01A1398442900132728 /* Credits.rtf in Resources */,
 				334CB0201398442900132728 /* MainMenu.xib in Resources */,
-				33E9BF0C1398636800F99CB0 /* applet.icns in Resources */,
 				33B702B6139925EE0052B594 /* README.md in Resources */,
 				3359BFFB139953C100ED8145 /* steam.icns in Resources */,
 			);
