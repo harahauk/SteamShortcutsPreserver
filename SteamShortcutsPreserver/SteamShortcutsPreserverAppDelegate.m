@@ -21,6 +21,16 @@
     output = @"";
     steam_path =  @"/Applications/Steam.app/Contents/MacOS/config/shortcuts.vdf";
     backup_path = [@"~/Documents/steam_shortcuts_backup.vdf" stringByExpandingTildeInPath];
+
+    if(![self steamPathIsCorrect:steam_path]){
+      
+      NSOpenPanel *op = [NSOpenPanel openPanel];
+      if ([op runModal] == NSOKButton)
+      {
+          steam_path = [[op filename] stringByAppendingString:@"/Contents/MacOS/config/shortcuts.vdf"];
+      }
+                      
+    }
     
     // Check if the backup exists
     if ([self backupFileExists:backup_path]){
@@ -59,12 +69,12 @@
         }
 
     }
-    else{
+    else if ([self backupFileExists:steam_path]){
         // Create backup file
         output = [output stringByAppendingString:@"Backup was not found.\nCreated backup file.\n"];
         [[NSFileManager defaultManager] copyPath:steam_path toPath:backup_path handler:nil];
     
-    }
+    } else output = [output stringByAppendingString:@"Steam location not found.\nAborting!\n"]; 
     [words setStringValue:[output stringByAppendingString:@"Done."]];
     
 }// end main
