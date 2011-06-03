@@ -1,6 +1,6 @@
 A testproject for beginning to learn Objective C
 
-This program backs up your shortcuts in Steam to the proper location for storing
+This program backs up your shortcuts in Steam for Mac to the proper location for storing
 application data. When you see that your shortcuts have been removed you can run
 this, or you can set it to run on login from the option menu.
 
