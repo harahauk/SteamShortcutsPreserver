@@ -3,9 +3,10 @@
 //  SteamShortcutsPreserver
 //
 //  Created by Harald Hauknes on 6/3/11.
-//  Copyright 2011 NTNU. All rights reserved.
+//  Copyright 2011. All rights reserved.
 //
 #import "SteamShortcutsPreserverAppDelegate.h"
+#import "LaunchAtLoginController.h"
 
 @implementation SteamShortcutsPreserverAppDelegate
 
@@ -20,7 +21,7 @@
     NSMutableString *steam_path, *backup_path, *output;
     output = @"";
     steam_path =  @"/Applications/Steam.app/Contents/MacOS/config/shortcuts.vdf";
-    backup_path = [@"~/Documents/steam_shortcuts_backup.vdf" stringByExpandingTildeInPath];
+    backup_path = [@"~/Library/Application\ Support/Steam/steam_shortcuts_backup.vdf" stringByExpandingTildeInPath];
 
     if(![self steamPathIsCorrect:steam_path]){
       
@@ -78,9 +79,26 @@
     [words setStringValue:[output stringByAppendingString:@"Done."]];
     
 }// end main
-- (IBAction)fixShortcuts:(id)sender{
-    [words setStringValue:@"Hello, douce"];
+- (BOOL)fixShortcuts:(id)sender{
+   // [words setStringValue:[sender description]];
+    /*NSMutableString *bundlePath;
+    bundlePath = [[NSBundle mainBundle] resourcePath];
+    if ([LaunchAtLoginController  willLaunchAtLogin:[NSURL fileURLWithPath:bundlePath]]){
+        [words setStringValue:@"True"];
+        [words setNeedsDisplay:YES];
+    
+
+    }else{
+    [words setStringValue:@"False retuned"];
     [words setNeedsDisplay:YES];
+    }
+    */
+    LaunchAtLoginController *launchController = [[LaunchAtLoginController alloc] init];
+    BOOL *currentState = [launchController launchAtLogin];
+    
+    [launchController setLaunchAtLogin:!currentState];
+    [launchController release];
+            
     
 }
 - (BOOL)backupIsSmallerThenCurrent:(int *)backup_size:(int *) current_size{
@@ -88,11 +106,9 @@
     
 }
 - (BOOL)steamPathIsCorrect:(NSMutableString *)steam_path{
-    //TODO: Check if we have the correct path
     return (BOOL)[[NSFileManager defaultManager] fileExistsAtPath:steam_path];
 }
 - (BOOL)backupFileExists:(NSMutableString *)backup_path{
-    //TODO: Check if we have the correct path
     return (BOOL)[[NSFileManager defaultManager] fileExistsAtPath:backup_path];
 }
 
